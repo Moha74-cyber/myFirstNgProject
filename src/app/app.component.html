@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<h1>My Angular project APP</h1>
+<!--On doit retrouver des propriétés avec deux accolades-->
+<H2>{{ title }}</H2>
+<!--on doit utiliser l'attribut (click) entre parenthèses
+pour appeler une méthode-->
+
+<button class="btn btn-primary" (click)="alert()">Click Me {{ nb }}</button
+><!--nb pour afficher le chiffre dans le boutton!-->
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
