@@ -1,0 +1,22 @@
+<p>detail works!</p>
+<h1>Numéro: {{ idPhoto }}</h1>
+<div class="row">
+  <div class="card col-12">
+    <img
+      class="card-img-top"
+      [src]="infoPhoto?.download_url"
+      alt="Card image cap"
+    />
+
+    <div class="card-body">
+      <h5 class="card-title">this image got ID {{ idPhoto }}</h5>
+      <h6>{{ infoPhoto?.author }}</h6>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+      <a class="btn btn-primary" (click)="goBackToGallery()">Back</a>
+      <!-- routerLink="/about" -->
+    </div>
+  </div>
+</div>

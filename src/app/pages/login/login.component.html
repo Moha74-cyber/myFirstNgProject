@@ -1,0 +1,6 @@
+<h2>Login Form</h2>
+<form [formGroup]="authForm" (ngSubmit)="login()">
+  <input type="text" formControlName="email" />
+  <input type="password" formControlName="password" />
+  <button type="submit" [disabled]="!authForm.valid">Login</button>
+</form>

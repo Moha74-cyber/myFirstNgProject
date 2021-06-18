@@ -5,13 +5,15 @@
     class="col-12 col-sm-6 col-md-4 col-lg-3 text-center"
     *ngFor="let img of galery"
   >
-    <!-- <img [src]="img.download_url" class="img-fluid" /> -->
-    <img
-      [src]="'https://picsum.photos/id/' + img.id + '/200'"
-      class="img-fluid"
-    />
-    <h4>{{ img.author }}</h4>
-    <h5>ID:{{ img.id }}</h5>
+    <a [routerLink]="'/about/' + img.id">
+      <!-- <img [src]="img.download_url" class="img-fluid" /> -->
+      <img
+        [src]="'https://picsum.photos/id/' + img.id + '/200'"
+        class="img-fluid"
+      />
+      <h4>{{ img.author }}</h4>
+      <h5>ID:{{ img.id }}</h5>
+    </a>
   </div>
 </div>
 <nav aria-label="Page navigation example">
